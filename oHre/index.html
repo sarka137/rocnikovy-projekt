@@ -7,29 +7,36 @@
     <title>Minesweeper - O hře</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="../lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
-        <!-- Grey with black text -->
-  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link " href="../index.html">Úvod</a>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link active" href="index.html">O hře</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pravidlaOvladani/index.html">Pravidla a ovladání</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Kvíz</a>
-        </li>
-      </ul>
+   <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+        <div class="container-fluid">
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="../index.html">Úvod</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link active" href="index.html">O hře</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pravidlaOvladani/index.html">Pravidla a ovladání</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../kviz/index.html">Kvíz</a>
+            </li>
+          </ul>
+        </div>
     </div>
-  </nav>
+      </nav>
 
   <header class="bg-dark p-5">
     <!-- place navbar here -->
@@ -40,19 +47,20 @@
 
     <div class="container-fluid py-5">
         <h2 class="text-center">Historie</h2>
-        <div class="text-right border border-danger px-5 py-4">
+        <div class="text-right border border-danger px-5 py-4 my-4">
             <p>
                 <i>Minesweeper</i> bylo vytvořeno Microsoftem v 90. letech, ale podle všeho 
                 se z části inspirovala hrou <i>Mined-Out</i> od Quicksilva z roku 1983, napsanou pro ZX Spectrum.
-                Verze pro Microsoft se poprvé objevila v roce 1990 v balíčku Windows Entertainment Pack,
-                který byl dán jako součást Windows 3.11. <br>
+                Verze pro Microsoft se poprvé objevila v roce 1990 v balíčku Windows Entertainment Pack 1,
+                který byl dán jako součást Windows 3.1. <br>
                 Hru napsali Robert Donner a Curt Johnson. Johnson uvedl, že design <i>Microsoft Minesweeper</i> byl vypůjčen z 
                 jiné hry, ale nebyla to <i>Mined-Out</i> a on si nepamatuje, jaká hra to byla. <br>
-                Hra <i>Microsoft Minesweeper</i> byla dodávána jako součást operačního systému až do Windows 8 (2012).
+                Hra <i>Microsoft Minesweeper</i> byla dodávána jako součást operačního systému až do Windows 8 (2012), novější verzi
+                hry lze najít v obchodě Microsoft Store.
             </p>
             </div>
             <h2 class="text-center">Varianty</h2>
-            <div class="text-right border border-danger px-5 py-4">
+            <div class="text-right border border-danger px-5 py-4 my-4">
                <p >
                 Zde jsou vysvětlené jiné varianty této hry:
                 <ul>
@@ -89,7 +97,7 @@
         
 
         <h2 class="text-center">Rekordy</h2>
-        <div class="text-right border border-danger px-5 py-4">
+        <div class="text-right border border-danger px-5 py-4 my-4">
             <p>
                 Ve hře se nejčastěji soutěží o dokončení hry v co nejkratším čase. <br>
                 Rekord za <b>nejrychlejší čas v obtížnosti "Beginner"</b> (pole 9x9 nebo 10x10, 10 min) se často mění, ale 
@@ -114,6 +122,9 @@
 
   </main>
 
+  <footer class="bg-dark text-light text-center p-1">
+    <p>&copy; 2023 - Šárka Žůrková, IT1</p>
+  </footer>
 
 </body>
 </html>

@@ -7,6 +7,7 @@
     <title>Minesweeper</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
 
@@ -14,24 +15,31 @@
 </head>
 <body >
     <!-- Grey with black text -->
-<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Úvod</a>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link " href="oHre/index.html">O hře</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pravidlaOvladani/index.html">Pravidla a ovladání</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Kvíz</a>
-        </li>
-      </ul>
+ <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+        <div class="container-fluid">
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Úvod</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link " href="oHre/index.html">O hře</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pravidlaOvladani/index.html">Pravidla a ovladání</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kviz/index.html">Kvíz</a>
+            </li>
+          </ul>
+        </div>
     </div>
-  </nav>
+      </nav>
   
 
     
@@ -43,58 +51,56 @@
     
       <main class="bg-secondary">
     
-    <div class="container-fluid ">
-        <h2 class="text-center ">Něco k úvodu</h2>
-            <p class="text-right border border-info px-5 py-4">
+    <div class="container-fluid py-5">
+        
+        <div class="text-right border border-info px-5 py-4 my-4">
+            <p>
                 <i>Minesweeper</i>, česky <i>Hledání min</i>, je počítačová hra obsažena v operačním systému Windows,
                 která byla později přenesena na ostatní operační systémy a herní konzole. Jde o logickou hru, při které se 
                 hráč snaží odhalit všechny miny na herní ploše.
             </p>
+          </div>
+    
+
+
+  
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
-
-
-  <!-- Použití prvku carousel -->
-  <section id="obrazky">
-    <div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="First slide"></li>
-        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-        <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="img/puzzle-minesweeper.png" class="mx-auto d-block" alt="First slide">
-          
-        </div>
-        <div class="carousel-item" data-bs-interval="1000">
-          <img src="img/hledaniMin.jpg" class="mx-auto d-block" alt="Second slide">
-         
-        </div>
-
-        <div class="carousel-item" data-bs-interval="1000">
-          <img src="img/googleMinesweeper.png" class="mx-auto d-block" alt="Third slide">
-        
-        </div>
-        
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/hledaniMin.jpg" alt="Minesweeper" class="d-block" style="width:50%">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="carousel-item">
+        <img src="img/puzzle-minesweeper.png" alt="Minesweeper" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/googleMinesweeper.png" alt="Google Minesweeper" class="d-block" style="width:100%">
+      </div>
     </div>
-  </section>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+</div>
 
-<!--
-<footer class="bg-dark text-light text-center p-3">
+<footer class="bg-dark text-light text-center p-1">
     <p>&copy; 2023 - Šárka Žůrková, IT1</p>
   </footer>
--->
+
 
       <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
